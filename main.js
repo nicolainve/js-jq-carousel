@@ -10,7 +10,14 @@ $(document).ready( function() {
         slideImg('prev');
     });
     
-    
+    $(document).keydown( function(event) {
+        
+        if (event.keyCode === 39) {
+            slideImg('next');
+        } else if (event.keyCode === 37) {
+            slideImg('prev');
+        }
+    })  
 })
 
 // FUNCTION
